@@ -1,0 +1,196 @@
+<!--
+
+index.html
+
+Computer Science 50
+Harvard University
+
+by student Elena Sufieva
+An application for airports and flights oon the world map
+Final project
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+
+
+        <script type=text/javascript>
+            $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+            STATIC_URL = '/static/';
+        </script>
+        
+        <!-- api keys -->
+        <script src="{{ url_for('static', filename='js/api_keys.js')}}"></script>
+
+        <!--flask variable for holding google map api key for map's loading -->
+        <script>var apikey = '{{ apikey }}';</script>
+
+        <!-- https://developers.google.com/maps/documentation/javascript/ -->
+        <script src="https://maps.googleapis.com/maps/api/js?key={{apikey}}&language=en"></script>
+
+        <!-- http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.9/ -->
+        <script src="{{url_for('static', filename='js/markerwithlabel_packed.js')}}"></script>
+
+        <!-- http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclustererplus/docs/examples.html -->
+        <script src="{{url_for('static', filename='js/markerclusterer_packed.js')}}"></script>
+
+        <!-- http://jquery.com/ -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+        <!-- http://jqueryui.com/  -->
+        <!-- this is sources for jquery ui api-->
+        <script src="{{url_for('static', filename='js/jquery-ui-1.11.4.custom/external/jquery/jquery.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery-ui-1.11.4.custom/jquery-ui.min.js')}}"></script>
+        <link href="{{url_for('static', filename='js/jquery-ui-1.11.4.custom/jquery-ui.min.css')}}" rel="stylesheet"/>
+        <script src="{{url_for('static', filename='js/jquery-ui-1.11.4.custom-light/external/jquery/jquery.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery-ui-1.11.4.custom-light/jquery-ui.min.js')}}"></script>
+        <link href="{{url_for('static', filename='js/jquery-ui-1.11.4.custom-light/jquery-ui.min.css')}}" rel="stylesheet"/>
+        <link href="{{url_for('static', filename='js/jquery-ui-1.11.4.custom-light/jquery-ui.theme.css')}}" rel="stylesheet"/>
+        <link href="{{url_for('static', filename='js/jquery-ui-1.11.4.custom-light/jquery-ui.theme.min.css')}}" rel="stylesheet"/>
+
+
+        <!-- http://getbootstrap.com/ -->
+        <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet"/>
+       <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
+        <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">--->
+        <link href="{{url_for('static', filename='css/font-awesome-4.4.0/css/font-awesome.css')}}" rel="stylesheet"/>
+        <link href="{{url_for('static', filename='css/font-awesome-4.4.0/css/font-awesome.min.css')}}" rel="stylesheet"/>
+
+        <!-- http://underscorejs.org/ -->
+        <script src="{{url_for('static', filename='js/underscore-min.js')}}"></script>
+
+        <!-- https://github.com/twitter/typeahead.js/ -->
+        <script src="{{url_for('static', filename='js/typeahead.jquery.js')}}"></script>
+
+        <!-- app's own JavaScript -->
+        <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+
+        <!-- js module for getting flights info -->
+        <script src="{{ url_for('static', filename='js/get_flights.js')}}"></script>
+
+        <!--js module for saving user airports (as origins of flight) -->
+        <script src="{{ url_for('static', filename='js/user_marker_module.js')}}"></script>
+
+        <!--js module for flight parameters (works with modal) -->
+        <script src="{{ url_for('static', filename='js/change_parameters_module.js')}}"></script>
+
+        <!--js module for flight date (by default) if user doens't want modal -->
+        <script src="{{ url_for('static', filename='js/module.get_date.js')}}"></script>
+
+        <!-- js module for all markers stuff -->
+        <script src="{{ url_for('static', filename='js/markers_module.js')}}"></script>
+
+        <!-- js module for typeahed suggestion -->
+        <script src="{{ url_for('static', filename='js/suggestion_module.js')}}"></script>
+
+        <!-- js module for getting right country in the center of map's bounds -->
+        <script src="{{ url_for('static', filename='js/get_country_module.js')}}"></script>
+
+        <!-- js module for getting capital of country in the center of map's bounds -->
+        <script src="{{ url_for('static', filename='js/capital_module.js')}}"></script>
+
+        <!-- project's own styles -->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+
+        <title>Comfort flights</title>
+
+    </head>
+    <body>
+
+        <!-- fill viewport -->
+        <div class="container-fluid">
+
+            <!-- https://developers.google.com/maps/documentation/javascript/tutorial -->
+            <div id="map-canvas"></div>
+
+            <!-- http://getbootstrap.com/css/#forms -->
+            <form class="form-inline" id="form" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="q">Airport, City, Country</label>
+                    <input class="form-control" id="q" placeholder="Airport, City, Country" type="text"/>
+                </div>
+            </form>
+            <div class="btn-group">
+                <p>
+                    <button id="show" type="button" name="btn" value="show" class="btn btn-primary active">Show airports</button>
+                    <button id="hide" type="button" name="btn" value="hide" class="btn btn-primary disabled">Hide airports</button>
+                </p>
+            </div>
+            <button id="flight_param" type="button" name="btn" class="btn btn-info btn-lg"><span class="fa fa-plane fa-lg"></span> Choose flight parameters</button>
+                <div id="param" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h3 id="param-header"><span class="fa fa-cog fa-lg"></span> Passengers, date, price</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div id="passengers" class="form-group">
+                                    <label class="passlabel"><span class="fa fa-user-plus fa-lg"></span> Adult passengers: </label>
+                                    <input id="adult-spinner" class="spinner" name="value" value="1">
+                                    <label class="passlabel"><span class="fa fa-user-plus"></span> Child passengers: </label>
+                                    <input id="child-spinner"  class="spinner" name="value" value="0">
+                                    <br/>
+                                    <label class="passlabel">Maximum price: </label>
+                                    <input type="text" id="maxprice" readonly value="500$"/>
+                                    <br/>
+                                    <div id="price-slider" class="ui-lightness-elements-all"></div>
+                                    <br/>
+                                    <div class="container" id="date_choice">
+                                        <ul class="nav nav-pills">
+                                            <li class="active"><a class="date-pills" data-toggle="pill" href="#oneway">One way</a></li>
+                                            <li><a class="udate-pills" data-toggle="pill" href="#roundway">Round flight</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="oneway" class="tab-pane fade in active">
+                                                <label class="passlabel" for="date1">Date <span id="calendar1" class="fa fa-calendar fa-lg"></span></label>
+                                                <input id="date1" name="date" type="text" placeholder="YYYY-MM-DD"/>
+                                            </div>
+                                            <div id="roundway" class="tab-pane fade">
+                                                <p><label class="passlabel" for="date2">Departure <span id="calendar2" class="fa fa-calendar fa-lg"></span></label>
+                                                <input id="date2" name="date" type="text" placeholder="YYYY-MM-DD"/></p>
+                                                <p><label id="returnlabel" class="passlabel" for="date3">Return <span id="calendar3" class="fa fa-calendar fa-lg"></span></label>
+                                                <input id="date3" name="date" type="text" placeholder="YYYY-MM-DD"/></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="choose_airports">
+                                        <label id="origins" class="passlabel">Search flights from airports: </label>
+                                        <br/>
+                                        <button id="choose-0" class="btn btn-md btn-from active"></button>
+                                        <button id="choose-1" class="btn btn-md btn-from active"></button>
+                                        <button id="choose-2" class="btn btn-md btn-from active"></button>
+                                        <button id="return" class="btn btn-md"><span class="fa fa-angle-double-left"></span> Back to default</button>
+                                    </div>
+                                    <br/>
+                                    <button id="edit" class="btn btn-md" data-toggle="popover">Change airports <span id="edit_airports" class="fa fa-pencil"></span></button>
+                                    <br/>
+                                    <div class="alert alert-warning fade in" style="display: none">It seems you've typed incorrect code.</div>
+                                    
+                                    <button id="btn-submit" type="submit" class="btn btn-success">Submit</button>
+                                    <br/>
+                                </div>
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-warning" id="warning-alert">
+                <strong>This airport is not found in the database. The origin has default value.</strong>
+            </div>
+
+        </div>
+    </body>
+</html>

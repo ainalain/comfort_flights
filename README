@@ -1,0 +1,96 @@
+#Computer Science 50
+#Harvard University
+#by student Elena Sufieva
+#An application for airports and flights on the world map
+#Final project 
+
+#You have to create a special folder where you can safely install all necessary libraries and modules for checking the work of Comfort flight app. 
+#I propose that it will be a directory within a python virtualenv:
+	$ sudo apt-get update && sudo apt-get install python-virtualenv
+#Change directory to your final_project folder and create there a venv folder, then activate your virtualenv:
+	$ virtualenv venv
+	$ source venv/bin/activate
+
+#This application is running in the Google maps API, so you have to get the application key for the requests. You can get it from Google maps API page:
+# https://developers.google.com/maps/documentation/javascript/get-api-key 
+#Follow the instructions and get your API key (I used server key for this application)
+#You have to enable some Google APIs because they are important for this application; Here you can do it: https://console.developers.google.com
+#Choose these APIs and enable them for your project (and your Api key): Google Maps JavaScript API, Google Maps Geocoding API, QPX Express Airfare API 
+#Then open this file: final_project/app/static/js/api_keys.js
+#and assign your key value to the variable APPLICATION_API_KEY
+#Open second file with this variable: final_project/app/api_keys.py
+#and assign your key value to the variable APPLICATION_API_KEY
+#If you have any problems with google api authentification (as Invalid key and other), check that you had assigned the value of your key in both places: .js and .py files. 
+
+#This application runs on flask, so you have to install this microframework into this folder with this command:
+	(venv) $ pip install flask  
+
+#This application holds data in the database 'airports' built in the PostgreSQL system. The server part of the app is written in python, the client-side part is written in javascript.
+# So first you need to install postgresql system package
+	$ sudo apt-get install postgresql
+#The access to the psql database is provided by Psycopg2 adapter. You need to install it into your venv environment. But before that you have to make sure that psycopg2 build dependencies
+# are also present in the system:
+# Install dependencies:
+	$ sudo apt-get install libpq-dev
+	$ sudo apt-get install python-dev
+
+#Install psycopg2:
+	(venv)$ pip install psycopg2
+
+#Then you have to install postgis, a spatial database extended for postgresql (we have some geographic conditions for our queries like country boundaries):
+	$ sudo apt-get install postgis
+#After installation postgis needs to be manually enabled to your database, so we'll return to this after creation of the database.
+
+#And now it's time to restore our database 'airports' from sql file. For this purpose you have to create empty database in postgres and to make it's owner a superuser jharvard. Unfortunately, I didn't knew how to avoid this dependency in the pg_dump command, so if you wnat to use the database, the postgres role 'jharvard' is required. Please, create this role and make a small change in the postgres config file to allow this user all necessary connection and actions:
+#create role jharvard
+	$ sudo -u postgres psql postgres
+	psql (9.4.5)
+	Type "help" for help.
+	postgres=# CREATE ROLE jharvard WITH SUPERUSER CREATEDB LOGIN;
+	CREATE ROLE
+	postgres=# CREATE DATABASE airports WITH OWNER = jharvard;
+	CREATE DATABASE
+#change the postgres config file (since postgresql versions differ on different systems, my X.X = 9.4 may not work for you because on your system it's, for example, 9.3):   
+	$ cd /etc/postgresql/X.X/main/
+	$ sudo vi pg_hba.conf
+#In this file you'll add one more string: 
+# TYPE DATABASE USER ADDRESS METHOD
+#local  all      jharvard     trust
+
+# Then restart postgresql server
+        $ sudo service postgresql restart
+
+#Enable postgis for this database:
+	$ psql -U jharvard airports
+	airports=# CREATE EXTENSION postgis;
+	CREATE EXTENSION
+
+#In case you had problems creating an extension, you most likely need to install an additional package (because your postgresql package is a bit old):
+	$ sudo apt-get install postgresql-9.3-postgis-scripts
+
+#After this change you have the access to the airports database. Now we can restore the database from sql file:
+	(venv)final_project$ psql -U jharvard airports < airportsdb.sql
+
+#Start the application with command in python interpreter:
+	(venv)Downloads/venv/final_project$ python run.py
+#Head over http://127.0.0.1:5000/ and you'll see the Comfort flights page.
+#If you don't see any red markers of the cities, then check your javascript console and check that you've enabled all necessary Google Apis.
+
+#Ok, now you have the running application Comfort flights. Congratulations!
+#I'll make some suggestions about it possibilities:
+#You can drag the map and it'll update: you will see new red markers, one marker for the country which will be the center of the map. In most cases it will be the capital of this country.
+#You can also use zoom in and out and the map will update anew. The field of typeahed in the left corner of the map will help you to find the concrete city or airport by it's name.
+#After this (typeahed's) choice the map will update.
+#The blue marker shows your location, if you've allowed to get it, and the default 'home' marker (this is Harvard's coordinates).
+#This blue marker shows what city will be considered as origin for your requests. If you want to choose another origin, you have 2 ways to do it:
+#1. You can type the code of origin airport manually in the modal (click the button "Choose flight parameters" in the right corner of the map).
+# You can also change other parameters of the request: count of passengers, the maximum price, the date (and the dates in round flight). Don't forget to submit all these data!
+#2. If you have made a request to any city and you see the opened infowindow with information about flights, you can click the button "Save as origin" (corner of infowindow)
+#and this city will be remembered as origin for your future requests. You'll see it because the marker will become blue. Of course, you can cancel this save and return to your default origin:
+#just open the modal with parameters and click the button "Return to default".
+#I hope you will enjoy playing with this program!
+#Thank you for your attention.
+
+
+
+

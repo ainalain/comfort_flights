@@ -1,0 +1,248 @@
+Aruba,Aruba,Oranjestad,[u'AWG'],Americas,Caribbean
+Afghanistan,Islamic Republic of Afghanistan,Kabul,[u'AFN'],Asia,Southern Asia
+Angola,Republic of Angola,Luanda,[u'AOA'],Africa,Middle Africa
+Anguilla,Anguilla,The Valley,[u'XCD'],Americas,Caribbean
+Aland Islands,Aland Islands,Mariehamn,[u'EUR'],Europe,Northern Europe
+Albania,Republic of Albania,Tirana,[u'ALL'],Europe,Southern Europe
+Andorra,Principality of Andorra,Andorra la Vella,[u'EUR'],Europe,Southern Europe
+United Arab Emirates,United Arab Emirates,Abu Dhabi,[u'AED'],Asia,Western Asia
+Argentina,Argentine Republic,Buenos Aires,[u'ARS'],Americas,South America
+Armenia,Republic of Armenia,Yerevan,[u'AMD'],Asia,Western Asia
+American Samoa,American Samoa,Pago Pago,[u'USD'],Oceania,Polynesia
+Antarctica,Antarctica,,[],,
+French Southern and Antarctic Lands,Territory of the French Southern and Antarctic Lands,Port-aux-Francais,[u'EUR'],,
+Antigua and Barbuda,Antigua and Barbuda,Saint John's,[u'XCD'],Americas,Caribbean
+Australia,Commonwealth of Australia,Canberra,[u'AUD'],Oceania,Australia and New Zealand
+Austria,Republic of Austria,Vienna,[u'EUR'],Europe,Western Europe
+Azerbaijan,Republic of Azerbaijan,Baku,[u'AZN'],Asia,Western Asia
+Burundi,Republic of Burundi,Bujumbura,[u'BIF'],Africa,Eastern Africa
+Belgium,Kingdom of Belgium,Brussels,[u'EUR'],Europe,Western Europe
+Benin,Republic of Benin,Porto-Novo,[u'XOF'],Africa,Western Africa
+Burkina Faso,Burkina Faso,Ouagadougou,[u'XOF'],Africa,Western Africa
+Bangladesh,People's Republic of Bangladesh,Dhaka,[u'BDT'],Asia,Southern Asia
+Bulgaria,Republic of Bulgaria,Sofia,[u'BGN'],Europe,Eastern Europe
+Bahrain,Kingdom of Bahrain,Manama,[u'BHD'],Asia,Western Asia
+Bahamas,Commonwealth of the Bahamas,Nassau,[u'BSD'],Americas,Caribbean
+Bosnia and Herzegovina,Bosnia and Herzegovina,Sarajevo,[u'BAM'],Europe,Southern Europe
+Saint Barthelemy,Collectivity of Saint BarthelemySaint Barthelemy,Gustavia,[u'EUR'],Americas,Caribbean
+Belarus,Republic of Belarus,Minsk,[u'BYR'],Europe,Eastern Europe
+Belize,Belize,Belmopan,[u'BZD'],Americas,Central America
+Bermuda,Bermuda,Hamilton,[u'BMD'],Americas,Northern America
+Bolivia,Plurinational State of Bolivia,Sucre,"[u'BOB', u'BOV']",Americas,South America
+Brazil,Federative Republic of Brazil,Brasilia,[u'BRL'],Americas,South America
+Barbados,Barbados,Bridgetown,[u'BBD'],Americas,Caribbean
+Brunei,"Nation of Brunei, Abode of Peace",Bandar Seri Begawan,[u'BND'],Asia,South-Eastern Asia
+Bhutan,Kingdom of Bhutan,Thimphu,"[u'BTN', u'INR']",Asia,Southern Asia
+Bouvet Island,Bouvet Island,,[u'NOK'],,
+Botswana,Republic of Botswana,Gaborone,[u'BWP'],Africa,Southern Africa
+Central African Republic,Central African Republic,Bangui,[u'XAF'],Africa,Middle Africa
+Canada,Canada,Ottawa,[u'CAD'],Americas,Northern America
+Cocos (Keeling) Islands,Territory of the Cocos (Keeling) Islands,West Island,[u'AUD'],Oceania,Australia and New Zealand
+Switzerland,Swiss Confederation,Bern,"[u'CHE', u'CHF', u'CHW']",Europe,Western Europe
+Chile,Republic of Chile,Santiago,"[u'CLF', u'CLP']",Americas,South America
+China,People's Republic of China,Beijing,[u'CNY'],Asia,Eastern Asia
+Ivory Coast,Republic of Cote d'Ivoire,Yamoussoukro,[u'XOF'],Africa,Western Africa
+Cameroon,Republic of Cameroon,Yaounde,[u'XAF'],Africa,Middle Africa
+DR Congo,Democratic Republic of the Congo,Kinshasa,[u'CDF'],Africa,Middle Africa
+Republic of the Congo,Republic of the Congo,Brazzaville,[u'XAF'],Africa,Middle Africa
+Cook Islands,Cook Islands,Avarua,[u'NZD'],Oceania,Polynesia
+Colombia,Republic of Colombia,Bogota,[u'COP'],Americas,South America
+Comoros,Union of the Comoros,Moroni,[u'KMF'],Africa,Eastern Africa
+Cape Verde,Republic of Cabo Verde,Praia,[u'CVE'],Africa,Western Africa
+Costa Rica,Republic of Costa Rica,San Jose,[u'CRC'],Americas,Central America
+Cuba,Republic of Cuba,Havana,"[u'CUC', u'CUP']",Americas,Caribbean
+Curacao,Country of Curacao,Willemstad,[u'ANG'],Americas,Caribbean
+Christmas Island,Territory of Christmas Island,Flying Fish Cove,[u'AUD'],Oceania,Australia and New Zealand
+Cayman Islands,Cayman Islands,George Town,[u'KYD'],Americas,Caribbean
+Cyprus,Republic of Cyprus,Nicosia,[u'EUR'],Europe,Eastern Europe
+Czech Republic,Czech Republic,Prague,[u'CZK'],Europe,Eastern Europe
+Germany,Federal Republic of Germany,Berlin,[u'EUR'],Europe,Western Europe
+Djibouti,Republic of Djibouti,Djibouti,[u'DJF'],Africa,Eastern Africa
+Dominica,Commonwealth of Dominica,Roseau,[u'XCD'],Americas,Caribbean
+Denmark,Kingdom of Denmark,Copenhagen,[u'DKK'],Europe,Northern Europe
+Dominican Republic,Dominican Republic,Santo Domingo,[u'DOP'],Americas,Caribbean
+Algeria,People's Democratic Republic of Algeria,Algiers,[u'DZD'],Africa,Northern Africa
+Ecuador,Republic of Ecuador,Quito,[u'USD'],Americas,South America
+Egypt,Arab Republic of Egypt,Cairo,[u'EGP'],Africa,Northern Africa
+Eritrea,State of Eritrea,Asmara,[u'ERN'],Africa,Eastern Africa
+Western Sahara,Sahrawi Arab Democratic Republic,El Aaiun,"[u'MAD', u'DZD', u'MRO']",Africa,Northern Africa
+Spain,Kingdom of Spain,Madrid,[u'EUR'],Europe,Southern Europe
+Estonia,Republic of Estonia,Tallinn,[u'EUR'],Europe,Northern Europe
+Ethiopia,Federal Democratic Republic of Ethiopia,Addis Ababa,[u'ETB'],Africa,Eastern Africa
+Finland,Republic of Finland,Helsinki,[u'EUR'],Europe,Northern Europe
+Fiji,Republic of Fiji,Suva,[u'FJD'],Oceania,Melanesia
+Falkland Islands,Falkland Islands,Stanley,[u'FKP'],Americas,South America
+France,French Republic,Paris,[u'EUR'],Europe,Western Europe
+Faroe Islands,Faroe Islands,Torshavn,[u'DKK'],Europe,Northern Europe
+Micronesia,Federated States of Micronesia,Palikir,[u'USD'],Oceania,Micronesia
+Gabon,Gabonese Republic,Libreville,[u'XAF'],Africa,Middle Africa
+United Kingdom,United Kingdom of Great Britain and Northern Ireland,London,[u'GBP'],Europe,Northern Europe
+Georgia,Georgia,Tbilisi,[u'GEL'],Asia,Western Asia
+Guernsey,Bailiwick of Guernsey,St. Peter Port,[u'GBP'],Europe,Northern Europe
+Ghana,Republic of Ghana,Accra,[u'GHS'],Africa,Western Africa
+Gibraltar,Gibraltar,Gibraltar,[u'GIP'],Europe,Southern Europe
+Guinea,Republic of Guinea,Conakry,[u'GNF'],Africa,Western Africa
+Guadeloupe,Guadeloupe,Basse-Terre,[u'EUR'],Americas,Caribbean
+Gambia,Republic of the Gambia,Banjul,[u'GMD'],Africa,Western Africa
+Guinea-Bissau,Republic of Guinea-Bissau,Bissau,[u'XOF'],Africa,Western Africa
+Equatorial Guinea,Republic of Equatorial Guinea,Malabo,[u'XAF'],Africa,Middle Africa
+Greece,Hellenic Republic,Athens,[u'EUR'],Europe,Southern Europe
+Grenada,Grenada,St. George's,[u'XCD'],Americas,Caribbean
+Greenland,Greenland,Nuuk,[u'DKK'],Americas,Northern America
+Guatemala,Republic of Guatemala,Guatemala City,[u'GTQ'],Americas,Central America
+French Guiana,Guiana,Cayenne,[u'EUR'],Americas,South America
+Guam,Guam,Hagatna,[u'USD'],Oceania,Micronesia
+Guyana,Co-operative Republic of Guyana,Georgetown,[u'GYD'],Americas,South America
+Hong Kong,Hong Kong Special Administrative Region of the People's Republic of China,City of Victoria,[u'HKD'],Asia,Eastern Asia
+Heard Island and McDonald Islands,Heard Island and McDonald Islands,,[u'AUD'],,
+Honduras,Republic of Honduras,Tegucigalpa,[u'HNL'],Americas,Central America
+Croatia,Republic of Croatia,Zagreb,[u'HRK'],Europe,Southern Europe
+Haiti,Republic of Haiti,Port-au-Prince,"[u'HTG', u'USD']",Americas,Caribbean
+Hungary,Hungary,Budapest,[u'HUF'],Europe,Eastern Europe
+Indonesia,Republic of Indonesia,Jakarta,[u'IDR'],Asia,South-Eastern Asia
+Isle of Man,Isle of Man,Douglas,[u'GBP'],Europe,Northern Europe
+India,Republic of India,New Delhi,[u'INR'],Asia,Southern Asia
+British Indian Ocean Territory,British Indian Ocean Territory,Diego Garcia,[u'USD'],Africa,Eastern Africa
+Ireland,Republic of Ireland,Dublin,[u'EUR'],Europe,Northern Europe
+Iran,Islamic Republic of Iran,Tehran,[u'IRR'],Asia,Southern Asia
+Iraq,Republic of Iraq,Baghdad,[u'IQD'],Asia,Western Asia
+Iceland,Iceland,Reykjavik,[u'ISK'],Europe,Northern Europe
+Israel,State of Israel,Jerusalem,[u'ILS'],Asia,Western Asia
+Italy,Italian Republic,Rome,[u'EUR'],Europe,Southern Europe
+Jamaica,Jamaica,Kingston,[u'JMD'],Americas,Caribbean
+Jersey,Bailiwick of Jersey,Saint Helier,[u'GBP'],Europe,Northern Europe
+Jordan,Hashemite Kingdom of Jordan,Amman,[u'JOD'],Asia,Western Asia
+Japan,Japan,Tokyo,[u'JPY'],Asia,Eastern Asia
+Kazakhstan,Republic of Kazakhstan,Astana,[u'KZT'],Asia,Central Asia
+Kenya,Republic of Kenya,Nairobi,[u'KES'],Africa,Eastern Africa
+Kyrgyzstan,Kyrgyz Republic,Bishkek,[u'KGS'],Asia,Central Asia
+Cambodia,Kingdom of Cambodia,Phnom Penh,[u'KHR'],Asia,South-Eastern Asia
+Kiribati,Independent and Sovereign Republic of Kiribati,South Tarawa,[u'AUD'],Oceania,Micronesia
+Saint Kitts and Nevis,Federation of Saint Christopher and Nevisa,Basseterre,[u'XCD'],Americas,Caribbean
+South Korea,Republic of Korea,Seoul,[u'KRW'],Asia,Eastern Asia
+Kosovo,Republic of Kosovo,Pristina,[u'EUR'],Europe,Eastern Europe
+Kuwait,State of Kuwait,Kuwait City,[u'KWD'],Asia,Western Asia
+Laos,Lao People's Democratic Republic,Vientiane,[u'LAK'],Asia,South-Eastern Asia
+Lebanon,Lebanese Republic,Beirut,[u'LBP'],Asia,Western Asia
+Liberia,Republic of Liberia,Monrovia,[u'LRD'],Africa,Western Africa
+Libya,State of Libya,Tripoli,[u'LYD'],Africa,Northern Africa
+Saint Lucia,Saint Lucia,Castries,[u'XCD'],Americas,Caribbean
+Liechtenstein,Principality of Liechtenstein,Vaduz,[u'CHF'],Europe,Western Europe
+Sri Lanka,Democratic Socialist Republic of Sri Lanka,Colombo,[u'LKR'],Asia,Southern Asia
+Lesotho,Kingdom of Lesotho,Maseru,"[u'LSL', u'ZAR']",Africa,Southern Africa
+Lithuania,Republic of Lithuania,Vilnius,[u'EUR'],Europe,Northern Europe
+Luxembourg,Grand Duchy of Luxembourg,Luxembourg,[u'EUR'],Europe,Western Europe
+Latvia,Republic of Latvia,Riga,[u'EUR'],Europe,Northern Europe
+Macau,Macao Special Administrative Region of the People's Republic of China,,[u'MOP'],Asia,Eastern Asia
+Saint Martin,Saint Martin,Marigot,[u'EUR'],Americas,Caribbean
+Morocco,Kingdom of Morocco,Rabat,[u'MAD'],Africa,Northern Africa
+Monaco,Principality of Monaco,Monaco,[u'EUR'],Europe,Western Europe
+Moldova,Republic of Moldova,Chisinau,[u'MDL'],Europe,Eastern Europe
+Madagascar,Republic of Madagascar,Antananarivo,[u'MGA'],Africa,Eastern Africa
+Maldives,Republic of the Maldives,Male,[u'MVR'],Asia,Southern Asia
+Mexico,United Mexican States,Mexico City,[u'MXN'],Americas,Central America
+Marshall Islands,Republic of the Marshall Islands,Majuro,[u'USD'],Oceania,Micronesia
+Macedonia,Republic of Macedonia,Skopje,[u'MKD'],Europe,Southern Europe
+Mali,Republic of Mali,Bamako,[u'XOF'],Africa,Western Africa
+Malta,Republic of Malta,Valletta,[u'EUR'],Europe,Southern Europe
+Myanmar,Republic of the Union of Myanmar,Naypyidaw,[u'MMK'],Asia,South-Eastern Asia
+Montenegro,Montenegro,Podgorica,[u'EUR'],Europe,Southern Europe
+Mongolia,Mongolia,Ulan Bator,[u'MNT'],Asia,Eastern Asia
+Northern Mariana Islands,Commonwealth of the Northern Mariana Islands,Saipan,[u'USD'],Oceania,Micronesia
+Mozambique,Republic of Mozambique,Maputo,[u'MZN'],Africa,Eastern Africa
+Mauritania,Islamic Republic of Mauritania,Nouakchott,[u'MRO'],Africa,Western Africa
+Montserrat,Montserrat,Plymouth,[u'XCD'],Americas,Caribbean
+Martinique,Martinique,Fort-de-France,[u'EUR'],Americas,Caribbean
+Mauritius,Republic of Mauritius,Port Louis,[u'MUR'],Africa,Eastern Africa
+Malawi,Republic of Malawi,Lilongwe,[u'MWK'],Africa,Eastern Africa
+Malaysia,Malaysia,Kuala Lumpur,[u'MYR'],Asia,South-Eastern Asia
+Mayotte,Department of Mayotte,Mamoudzou,[u'EUR'],Africa,Eastern Africa
+Namibia,Republic of Namibia,Windhoek,"[u'NAD', u'ZAR']",Africa,Southern Africa
+New Caledonia,New Caledonia,Noumea,[u'XPF'],Oceania,Melanesia
+Niger,Republic of Niger,Niamey,[u'XOF'],Africa,Western Africa
+Norfolk Island,Territory of Norfolk Island,Kingston,[u'AUD'],Oceania,Australia and New Zealand
+Nigeria,Federal Republic of Nigeria,Abuja,[u'NGN'],Africa,Western Africa
+Nicaragua,Republic of Nicaragua,Managua,[u'NIO'],Americas,Central America
+Niue,Niue,Alofi,[u'NZD'],Oceania,Polynesia
+Netherlands,Netherlands,Amsterdam,[u'EUR'],Europe,Western Europe
+Norway,Kingdom of Norway,Oslo,[u'NOK'],Europe,Northern Europe
+Nepal,Federal Democratic Republic of Nepal,Kathmandu,[u'NPR'],Asia,Southern Asia
+Nauru,Republic of Nauru,Yaren,[u'AUD'],Oceania,Micronesia
+New Zealand,New Zealand,Wellington,[u'NZD'],Oceania,Australia and New Zealand
+Oman,Sultanate of Oman,Muscat,[u'OMR'],Asia,Western Asia
+Pakistan,Islamic Republic of Pakistan,Islamabad,[u'PKR'],Asia,Southern Asia
+Panama,Republic of Panama,Panama City,"[u'PAB', u'USD']",Americas,Central America
+Pitcairn Islands,Pitcairn Group of Islands,Adamstown,[u'NZD'],Oceania,Polynesia
+Peru,Republic of Peru,Lima,[u'PEN'],Americas,South America
+Philippines,Republic of the Philippines,Manila,[u'PHP'],Asia,South-Eastern Asia
+Palau,Republic of Palau,Ngerulmud,[u'USD'],Oceania,Micronesia
+Papua New Guinea,Independent State of Papua New Guinea,Port Moresby,[u'PGK'],Oceania,Melanesia
+Poland,Republic of Poland,Warsaw,[u'PLN'],Europe,Eastern Europe
+Puerto Rico,Commonwealth of Puerto Rico,San Juan,[u'USD'],Americas,Caribbean
+North Korea,Democratic People's Republic of Korea,Pyongyang,[u'KPW'],Asia,Eastern Asia
+Portugal,Portuguese Republic,Lisbon,[u'EUR'],Europe,Southern Europe
+Paraguay,Republic of Paraguay,Asuncion,[u'PYG'],Americas,South America
+Palestine,State of Palestine,Ramallah,[u'ILS'],Asia,Western Asia
+French Polynesia,French Polynesia,Papeete,[u'XPF'],Oceania,Polynesia
+Qatar,State of Qatar,Doha,[u'QAR'],Asia,Western Asia
+Reunion,Reunion Island,Saint-Denis,[u'EUR'],Africa,Eastern Africa
+Romania,Romania,Bucharest,[u'RON'],Europe,Eastern Europe
+Russia,Russian Federation,Moscow,[u'RUB'],Europe,Eastern Europe
+Rwanda,Republic of Rwanda,Kigali,[u'RWF'],Africa,Eastern Africa
+Saudi Arabia,Kingdom of Saudi Arabia,Riyadh,[u'SAR'],Asia,Western Asia
+Sudan,Republic of the Sudan,Khartoum,[u'SDG'],Africa,Northern Africa
+Senegal,Republic of Senegal,Dakar,[u'XOF'],Africa,Western Africa
+Singapore,Republic of Singapore,Singapore,[u'SGD'],Asia,South-Eastern Asia
+South Georgia,South Georgia and the South Sandwich Islands,King Edward Point,[u'GBP'],Americas,South America
+Svalbard and Jan Mayen,Svalbard og Jan Mayen,Longyearbyen,[u'NOK'],Europe,Northern Europe
+Solomon Islands,Solomon Islands,Honiara,[u'SBD'],Oceania,Melanesia
+Sierra Leone,Republic of Sierra Leone,Freetown,[u'SLL'],Africa,Western Africa
+El Salvador,Republic of El Salvador,San Salvador,"[u'SVC', u'USD']",Americas,Central America
+San Marino,Most Serene Republic of San Marino,City of San Marino,[u'EUR'],Europe,Southern Europe
+Somalia,Federal Republic of Somalia,Mogadishu,[u'SOS'],Africa,Eastern Africa
+Saint Pierre and Miquelon,Saint Pierre and Miquelon,Saint-Pierre,[u'EUR'],Americas,Northern America
+Serbia,Republic of Serbia,Belgrade,[u'RSD'],Europe,Southern Europe
+South Sudan,Republic of South Sudan,Juba,[u'SSP'],Africa,Middle Africa
+Sao Tome and Principe,Democratic Republic of Sao Tome and Principe,Sao Tome,[u'STD'],Africa,Middle Africa
+Suriname,Republic of Suriname,Paramaribo,[u'SRD'],Americas,South America
+Slovakia,Slovak Republic,Bratislava,[u'EUR'],Europe,Eastern Europe
+Slovenia,Republic of Slovenia,Ljubljana,[u'EUR'],Europe,Southern Europe
+Sweden,Kingdom of Sweden,Stockholm,[u'SEK'],Europe,Northern Europe
+Swaziland,Kingdom of Swaziland,Lobamba,[u'SZL'],Africa,Southern Africa
+Sint Maarten,Sint Maarten,Philipsburg,[u'ANG'],Americas,Caribbean
+Seychelles,Republic of Seychelles,Victoria,[u'SCR'],Africa,Eastern Africa
+Syria,Syrian Arab Republic,Damascus,[u'SYP'],Asia,Western Asia
+Turks and Caicos Islands,Turks and Caicos Islands,Cockburn Town,[u'USD'],Americas,Caribbean
+Chad,Republic of Chad,N'Djamena,[u'XAF'],Africa,Middle Africa
+Togo,Togolese Republic,Lome,[u'XOF'],Africa,Western Africa
+Thailand,Kingdom of Thailand,Bangkok,[u'THB'],Asia,South-Eastern Asia
+Tajikistan,Republic of Tajikistan,Dushanbe,[u'TJS'],Asia,Central Asia
+Tokelau,Tokelau,Fakaofo,[u'NZD'],Oceania,Polynesia
+Turkmenistan,Turkmenistan,Ashgabat,[u'TMT'],Asia,Central Asia
+Timor-Leste,Democratic Republic of Timor-Leste,Dili,[u'USD'],Asia,South-Eastern Asia
+Tonga,Kingdom of Tonga,Nuku'alofa,[u'TOP'],Oceania,Polynesia
+Trinidad and Tobago,Republic of Trinidad and Tobago,Port of Spain,[u'TTD'],Americas,Caribbean
+Tunisia,Tunisian Republic,Tunis,[u'TND'],Africa,Northern Africa
+Turkey,Republic of Turkey,Ankara,[u'TRY'],Asia,Western Asia
+Tuvalu,Tuvalu,Funafuti,[u'AUD'],Oceania,Polynesia
+Taiwan,Republic of China,Taipei,[u'TWD'],Asia,Eastern Asia
+Tanzania,United Republic of Tanzania,Dodoma,[u'TZS'],Africa,Eastern Africa
+Uganda,Republic of Uganda,Kampala,[u'UGX'],Africa,Eastern Africa
+Ukraine,Ukraine,Kiev,[u'UAH'],Europe,Eastern Europe
+United States Minor Outlying Islands,United States Minor Outlying Islands,,[u'USD'],Americas,Northern America
+Uruguay,Oriental Republic of Uruguay,Montevideo,"[u'UYI', u'UYU']",Americas,South America
+United States,United States of America,Washington D.C.,"[u'USD', u'USN', u'USS']",Americas,Northern America
+Uzbekistan,Republic of Uzbekistan,Tashkent,[u'UZS'],Asia,Central Asia
+Vatican City,Vatican City State,Vatican City,[u'EUR'],Europe,Southern Europe
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,Kingstown,[u'XCD'],Americas,Caribbean
+Venezuela,Bolivarian Republic of Venezuela,Caracas,[u'VEF'],Americas,South America
+British Virgin Islands,Virgin Islands,Road Town,[u'USD'],Americas,Caribbean
+United States Virgin Islands,Virgin Islands of the United States,Charlotte Amalie,[u'USD'],Americas,Caribbean
+Vietnam,Socialist Republic of Vietnam,Hanoi,[u'VND'],Asia,South-Eastern Asia
+Vanuatu,Republic of Vanuatu,Port Vila,[u'VUV'],Oceania,Melanesia
+Wallis and Futuna,Territory of the Wallis and Futuna Islands,Mata-Utu,[u'XPF'],Oceania,Polynesia
+Samoa,Independent State of Samoa,Apia,[u'WST'],Oceania,Polynesia
+Yemen,Republic of Yemen,Sana'a,[u'YER'],Asia,Western Asia
+South Africa,Republic of South Africa,Pretoria,[u'ZAR'],Africa,Southern Africa
+Zambia,Republic of Zambia,Lusaka,[u'ZMW'],Africa,Eastern Africa
+Zimbabwe,Republic of Zimbabwe,Harare,[u'ZWL'],Africa,Eastern Africa

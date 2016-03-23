@@ -1,0 +1,391 @@
+/**
+* styles for final project
+*by Elena Syfieva
+* CS50
+**/
+
+/* allow map to fill viewport */
+html, body, #map-canvas, .container-fluid
+{
+    /* height of these elements */
+    height: 100%;
+
+    /* no margin around these elements */
+    margin: 0;
+
+    /* disable scrollbars */
+    overflow: hidden;
+
+    /* no padding within these elements */
+    padding: 0;
+}
+
+/*stylize user marker's label - if this 'home' marker would be inactivated */
+.labelsInactive
+{
+    color: dodgerblue;
+    text-decoration: line-through;
+    font-weight: 600;
+    font-family: sans-serif;
+    opacity: 1;
+    font-size: larger;
+    white-space: nowrap;
+}
+
+/*stylize the normal user_marker's label's view */
+.labels
+{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    font-size: larger;
+    white-space: nowrap;
+}
+
+/* align form to right of pan control */
+#form
+{
+    /* distance from left edge of viewport */
+    left: 100px;
+
+    /* position form "absolutely" where we want it */
+    position: absolute;
+
+    /* distance from top edge of viewport */
+    top: 28px;
+}
+
+/* stylize text box */
+#q
+{
+    /* override typeahead.js's transparent background */
+    background-color: #ffffff !important;
+
+    /* text box's width */
+    width: 300px;
+}
+/* stylize typeahead.js a la http://twitter.github.io/typeahead.js/css/examples.css */
+.tt-dropdown-menu
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 6px 12px;
+    width: 300px;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #0097cf;
+    color: #fff;
+    cursor: pointer;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+/* stylize places' labels */
+.label
+{
+    /* small, black text */
+    color: #000000;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+    /* don't let places' labels wrap onto multiple lines */
+    white-space: nowrap;
+}
+
+/*stylize button of flight parameters */
+#flight_param
+{
+    /* distance from right edge of viewport */
+    right: 80px;
+
+    /* position form "absolutely" where we want it */
+    position: absolute;
+
+    /* distance from top edge of viewport */
+    top: 38px;
+
+    z-index: 0;
+}
+
+/*stylize buttons for showing/hiding all airports of the area*/
+.btn-group
+{
+    /* distance from left edge of viewport */
+    left: 80px;
+
+    /* position form "absolutely" where we want it */
+    position: absolute;
+
+    /* distance from top edge of viewport */
+    top: 68px;
+
+    z-index: 0;
+}
+
+/* stylize bootstrap modal for passengers' count */
+#param
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    /*position: fixed;
+    outline: none;
+*/
+}
+/* stylize dialog window of bootstrap modal*/
+.modal-dialog
+{
+    width: 400px;
+    
+    position: fixed;
+    top: 56px;
+    right: 10px;
+    border-radius: 8px;
+    
+}
+
+
+#passengers
+{
+    top: 58px;
+    right: 30px;
+}
+/*stylize header zone for modal window */
+.modal-header
+{
+    background-color: cornsilk;
+    padding: 7px;
+    text-align: center;
+    font-weight: 600;
+    height: 5%;
+    border-radius: 8px 8px 0 0;
+}
+/*stylize the size and scrolling of the modal body */
+.modal-body
+{
+    height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*stylize all the labels within the modal */
+.passlabel
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+}
+
+
+
+#param-header
+{
+    font-weight: 600;
+    text-align: center;
+}
+/*stylize persentation of maximum price in parameters' modal */
+#maxprice
+{
+    padding-top: 7px;
+    border:0;
+    color:#f6931f;
+    font-weight:bold;
+}
+
+/* buttons for choosing airports the flight would been searched */
+.btn-from
+{
+
+    text-align: left;
+    padding: 7px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+/*make a visual difference between active and disabled airport buttons*/
+.btn-from.inactive {
+    background-color: #357ebd;
+    opacity: 0.3;
+    color: #262626;
+}
+.btn-from.active {
+    background-color: #5bc0de;
+    opacity: 1.0;
+    color: #080808;
+
+}
+
+/*badge in buttons of origins  */
+.badge
+{
+    background-color: white;
+    color: #080808;
+    display: none;
+
+}
+/*button for editing origin airport */
+#edit
+{
+    background-color: #afd9ee;
+    font-weight: 500;
+    overflow: visible;
+    z-index: 7;
+}
+/*this button appears if user had once saved some airports as origin for future search and modal proposes choice: back to default airports*/
+#return
+{
+    background-color: #f6a828;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+div.popover.fade.bottom.in
+{
+    left: 7px !important;
+}
+
+/*stylize the popover for the manually typed iata code */
+#popovercont
+{
+    height: 35px;
+    z-index: 10;
+    overflow: visible;
+}
+
+div.alert.alert-warning.fade.in 
+{
+    weight: 400px;
+    z-index: 2000;
+    position: absolute !important;
+    top: 500px;
+}
+
+/*stylize the pills of date menu */
+.date-pills
+{
+    background-color: gold;
+}
+
+.tab-content
+{
+    padding: 5px;
+}
+/*button for submit chosen flight parameters */
+#btn-submit
+{
+    position: absolute;
+    padding: 5px;
+    margin-bottom: 5%;
+    right: 20px;
+    float: right;
+}
+/*stylize the price slider */
+#price-slider
+{
+    padding: 10px;
+}
+
+/*the bootstrap alert that appears when user types incorrect airport code (more or less than 3 letters)  */
+#warning-alert
+{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+
+/*stylize container for inwo window*/
+.gm-style-iw
+{
+    width: 400px !important;
+    top: 15px !important;
+    left: 0 !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 2px solid rgba(72, 181, 233, 0.6);
+    border-radius: 10px;
+}
+
+/*stylize info window */
+#info
+{
+    position: relative;
+    max-height: 300px;
+}
+
+/*stylize infowindow's title*/
+#info .iw-title
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: cornsilk;
+    width: 396px !important;
+    height: 60px;
+    padding: 7px;
+    margin: 1px;
+    border-radius: 2px 2px 0 0;
+}
+
+/*stylize button for saving this city as origin of future search*/
+#savehome
+{
+    position: absolute;
+    right: 22px;
+    top: 4px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+/*stylize the label of clicked marker if user had chosen it as new origin*/
+#homediv
+{
+    background-color: transparent;
+    opacity: 1;
+    color: blue;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*stylize content of infowindow*/
+#info .iw-content
+{
+    margin-right: 1px;
+    padding: 7px;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*stylize remark about nonstop flight or flight with transfer*/
+.remark
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*stylize textual presentation of data info within info window  */
+.flight-info
+{
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*stylize micro titles of found flights in info window */
+.microtitle
+{
+    font-weight: 700;
+}
+
+/*stylize message about search failure*/
+#noflight
+{
+    font-style: italic;
+}
